@@ -113,7 +113,7 @@ let
   };
 
 in {
-  inherit buildResources;
+  inherit buildResources evalKubernetesModules;
 
   tests."k8s-1_7" = buildTest ./test/default.nix "1.7";
   tests."k8s-1_8" = buildTest ./test/default.nix "1.8";
